@@ -20,8 +20,9 @@ public class Nuevo {
         int cont = 0;
         int num1 = 0, num2 = 0, resultado = 0;
         String cadena;
-        char caracter, letra;
+        char caracter, letra, op;
         
+        do{
         System.out.println("Introduzca una cadena");
         cadena = sc. nextLine();
         System.out.println("Introduce un caracter");
@@ -37,6 +38,10 @@ public class Nuevo {
         System.out.println("El caracter " + caracter + " se ha repetido " + cont + " veces");
         
         System.out.println("La suma es " + suma(num1,num2,resultado));
+        
+            System.out.println("Desea continuar? s/n");
+            op = sc.nextLine().charAt(0);
+        }while(op == 's');
     }
    public static int suma(int num1,int num2,int resultado){
        resultado = num1 + num2;
