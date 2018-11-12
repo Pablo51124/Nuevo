@@ -18,6 +18,7 @@ public class Nuevo {
         Scanner sc = new Scanner(System.in);
         
         int cont = 0;
+        int num1 = 0, num2 = 0, resultado = 0;
         String cadena;
         char caracter, letra;
         
@@ -34,6 +35,12 @@ public class Nuevo {
         }
         
         System.out.println("El caracter " + caracter + " se ha repetido " + cont + " veces");
+        
+        System.out.println("La suma es " + suma(num1,num2,resultado));
     }
-    
+   public static int suma(int num1,int num2,int resultado){
+       resultado = num1 + num2;
+       
+       return resultado;
+   }
 }
